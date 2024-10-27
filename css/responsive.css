@@ -38,6 +38,13 @@
     padding: 75px 0;
   }
 
+  @media (max-width: 768px) {
+    .slider_section {
+      background-position: center bottom; /* Posiciona a imagem de fundo na metade inferior */
+    }
+  }
+  
+
   .project_section .filter_box {
     flex-direction: column;
     align-items: flex-start;
