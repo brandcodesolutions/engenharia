@@ -523,8 +523,21 @@ a:focus {
   margin: 0 25px;
 }
 
+.box-container {
+  display: flex; /* Usar Flexbox para organizar as caixas */
+  justify-content: space-between; /* Espaço igual entre as caixas */
+  flex-wrap: wrap; /* Permite que as caixas se movam para a próxima linha se necessário */
+  margin-top: 45px; /* Espaçamento acima do container das caixas */
+}
+
 .service_section .box {
-  margin-top: 45px;
+  text-align: center; /* Centraliza o conteúdo da caixa */
+  width: 300px; /* Largura fixa para as caixas */
+  margin: 15px; /* Margem em todas as direções para espaçamento */
+  padding: 20px; /* Padding interno da caixa */
+  border: 1px solid #ccc; /* Borda opcional para definição */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f9f9f9; /* Cor de fundo das caixas */
 }
 
 .service_section .box .img-box {

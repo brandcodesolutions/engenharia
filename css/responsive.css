@@ -41,9 +41,31 @@
   @media (max-width: 768px) {
     .slider_section {
       background-position: center bottom; /* Posiciona a imagem de fundo na metade inferior */
+      flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos dentro da seção */
+    text-align: center; /* Centraliza o texto dentro da seção */
     }
-  }
-  
+    .slider_section .detail-box h1,
+    .slider_section .detail-box p {
+      text-align: center; /* Centraliza o texto do h1 e do p */
+    }
+    
+
+    @media (max-width: 768px) {
+      .slider_section .detail-box .btn-box {
+        display: flex; /* Mantém a estrutura flexível */
+        flex-direction: column; /* Alinha os botões verticalmente */
+        align-items: center; /* Centraliza os botões */ 
+      
+      }
+    
+      .slider_section .detail-box .btn-box .btn1,
+      .slider_section .detail-box .btn-box .btn2 {
+        width: 100%; /* Faz os botões ocuparem a largura total */
+        margin: 5px 0; /* Adiciona margem entre os botões */
+      }
+    }
+    
 
   .project_section .filter_box {
     flex-direction: column;
