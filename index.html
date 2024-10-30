@@ -370,13 +370,21 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
             </a>
           </div>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6 mobile-left">
           <div class="img-box">
             <img src="images/about-img.jpg" alt="">
           </div>
         </div>
       </div>
     </div>
+    <style>
+    @media (max-width: 767.98px) {
+      .mobile-left {
+        margin-left: -20%;
+        text-align: left;
+      }
+    }
+    </style>
     
   </section>
 
@@ -408,63 +416,64 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
           <div class="item painting">
             <div class="box">
               <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
+                <img src="images/project1.jpg" alt="" class="img-mobile">
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
               </div>
-              
             </div>
           </div>
           <div class="item reconstruction">
             <div class="box">
               <div class="img-box">
-                <img src="images/project2.jpg" alt="" />
+                <img src="images/project2.jpg" alt="" class="img-mobile">
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
               </div>
-             
             </div>
           </div>
-          <div class="item repair">
+          <div class="item painting">
             <div class="box">
               <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
+                <img src="images/project1.jpg" alt="" class="img-mobile">
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
               </div>
-              
             </div>
           </div>
-          <div class="item residential">
+          <div class="item painting">
             <div class="box">
               <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
+                <img src="images/project1.jpg" alt="" class="img-mobile">
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
               </div>
-             
             </div>
           </div>
-          <div class="item styling">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-                <a href="" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-             
-            </div>
-          </div>
+          <!-- Continue with other items as needed -->
         </div>
+        
       </div>
     </div>
   </section>
+  <style>
+ @media (max-width: 767.98px) {
+  .project_carousel {
+    padding: 30px;
+    transform: scale(1.1); /* Aumenta a seção */
+  }
 
+  .img-mobile {
+    width: 215% !important; /* Faz a imagem ocupar 100% da largura da tela */
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    max-width: none !important;
+  }
+}</style>
   <!-- end project section -->
 
   <!-- client section -->
@@ -579,7 +588,7 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    margin-left: 3px !important; /* Ajuste o valor conforme necessário */
+    margin-left: -10px !important; /* Ajuste o valor conforme necessário */
   }
 
   .img-box {
@@ -645,9 +654,51 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
           </div>
         </div>
       </div>
+      <style>
+        html, body {
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+  width: 100%; /* Garante que o body não exceda a largura da tela */
+}
+
+.container {
+  max-width: 100%; /* Garante que o contêiner não exceda a largura da tela */
+  padding: 0 15px; /* Ajuste conforme necessário */
+  box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+      </style>
       
   </section>
 
+  <style>
+    @media (max-width: 767.98px) {
+  .why_us_section .container {
+    width: 100% !important;
+    padding: 0 15px !important; /* Adiciona padding nas laterais para evitar corte */
+    margin: 0 auto !important;
+    box-sizing: border-box; /* Garante que o padding seja incluso no total da largura */
+  }
+
+  .why_us_container .box {
+    padding: 20px 10px; /* Ajusta o padding dos boxes para mobile */
+  }
+}
+
+  </style>
+ <style>
+  @media (max-width: 768px) {
+      .img-box {
+          display: flex;                
+          justify-content: center;     
+          align-items: center;         
+      }
+
+      .img-box img {
+          max-width: 100%;             
+          height: auto;                
+      }
+  }
+</style>
   <!-- end why us section -->
 
   <!-- contact section -->
