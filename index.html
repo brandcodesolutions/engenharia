@@ -50,13 +50,13 @@
             
           </div>
           <div class="contact_nav">
-            <a href="">
+            <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
                 (11) 9 9616-9619
               </span>
             </a>
-            <a href="">
+            <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do+site!">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
 contato@jorengenharia.com.br              </span>
@@ -241,7 +241,26 @@ contato@jorengenharia.com.br              </span>
           <li data-target="#customCarousel1" data-slide-to="4"></li>
         </ol>
       </div>
+<style>
+@media (max-width: 768px) {
+  .slider_section {
+    height: 400px; /* Defina uma altura fixa para dispositivos móveis */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura definida */
+  }
 
+  .carousel-item {
+    height: 100%; /* Garante que os itens do carrossel preencham a altura */
+  }
+
+  .detail-box h1 {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1.2; /* Ajuste a altura da linha para melhorar a legibilidade */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens do título */
+  }
+}
+
+</style>
     </section>
     <!-- end slider section -->
   </div>
@@ -713,70 +732,114 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
 </style>
   <!-- end why us section -->
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
-    <div class="container-fluid">
+<!-- contact section -->
+<section class="contact_section layout_padding-bottom">
+  <div class="container-fluid">
+    <div class="col-lg-4 col-md-5 offset-md-1">
+      <div class="heading_container">
+        <h2>
+          Contate-nos
+        </h2>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-lg-4 col-md-5 offset-md-1">
-        <div class="heading_container">
-          <h2>
-            Contate-nos
-          </h2>
+        <div class="form_container">
+          <form id="contactForm" onsubmit="sendWhatsApp(event)">
+            <div>
+              <input type="text" id="name" placeholder="Seu Nome" required />
+            </div>
+            <div>
+              <input type="text" id="phone" placeholder="Número de telefone" required />
+            </div>
+            <div>
+              <input type="email" id="email" placeholder="E-mail" required />
+            </div>
+            <div>
+              <input type="text" id="message" class="message-box" placeholder="Escreva sua mensagem" required />
+            </div>
+            <div class="btn_box">
+              <button type="submit">
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Seu Nome" />
-              </div>
-              <div>
-                <input type="text" placeholder="Número de telefone" />
-              </div>
-              <div>
-                <input type="email" placeholder="E-mail" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Escreva sua mensagem" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-6 px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
+      <div class="col-lg-7 col-md-6 px-0">
+        <div class="map_container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0497983538094!2d-46.6506526!3d-23.5666549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a796caed0f%3A0x538b7cfd170bf07f!2sAv.%20Paulista%2C%20777%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-914!5e0!3m2!1spt-BR!2sbr!4v1730263176415!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end contact section -->
+  </div>
+</section>
+<!-- end contact section -->
 
+<script>
+function sendWhatsApp(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Coletar dados do formulário
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Criar mensagem para o WhatsApp
+    const whatsappMessage = `Nome: ${name}%0ATelefone: ${phone}%0AE-mail: ${email}%0AMensagem: ${message}`;
+    
+    // Redirecionar para o WhatsApp
+    const whatsappURL = `https://wa.me/5511996169619?text=${whatsappMessage}`;
+    window.open(whatsappURL, '_blank');
+}
+</script>
+
+<!-- end contact section -->
+
+<!-- JavaScript to handle form submission -->
+<script>
+  function sendWhatsApp(event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+  
+      // Coletar dados do formulário
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+  
+      // Criar mensagem para o WhatsApp
+      const whatsappMessage = `Nome: ${name}%0ATelefone: ${phone}%0AE-mail: ${email}%0AMensagem: ${message}`;
+      
+      // Redirecionar para o WhatsApp
+      const whatsappURL = `https://wa.me/5511996169619?text=${whatsappMessage}`;
+      window.open(whatsappURL, '_blank');
+  }
+  </script>
   <!-- info section -->
   <section class="info_section ">
 
     <div class="container">
       <div class="contact_nav">
-        <a href="">
+        <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
           <i class="fa fa-phone" aria-hidden="true"></i>
           <span>
-            Telefone : (11) 9 9616-9619)
+            Telefone : (11) 9 9616-9619
           </span>
         </a>
-        <a href="">
+        <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do+site!">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span>
             E-mail : contato@jorengenharia.com.br
           </span>
         </a>
-        <a href="">
+        <a href="https://maps.app.goo.gl/MTAdhro99TdYBFRs8">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
           <span>
             Localização : São Paulo - SP
@@ -817,7 +880,7 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
                   <img src="images/instagram3.jpeg" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram4.jpeg" alt="">
+                  <img src="images/instagram1.jpeg" alt="">
                 </div>
                 <div class="img-box">
                   <img src="images/instagram5.jpeg" alt="">
@@ -854,13 +917,13 @@ Na JOR Engenharia e Perícias, nossa missão é assegurar que nossos serviços a
           </div>
           <div class="col-md-4 ml-auto">
             <div class="social_box">
-              <a href="">
+              <a href="https://www.facebook.com/engesolengenharia/">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
