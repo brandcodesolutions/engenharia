@@ -378,6 +378,7 @@ a:focus {
   background-color: #bc570d;
 }
 
+
 /*end header section*/
 /* slider section */
 .slider_section {
@@ -1244,3 +1245,109 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*******************************/
+/******** Portfolio CSS ********/
+/*******************************/
+.portfolio {
+  position: relative;
+  padding: 45px 0 15px 0;
+}
+
+.portfolio #portfolio-filter {
+  padding: 0;
+  margin: -15px 0 25px 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+}
+
+.portfolio #portfolio-filter li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #025DB1;
+  border: 2px solid transparent;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 50px #025DB1;
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+}
+
+.portfolio #portfolio-filter li:hover,
+.portfolio #portfolio-filter li.filter-active {
+  color: #025DB1;
+  background: transparent;
+  box-shadow: inset 0 0 0 0 #025DB1;
+  border-color: #025DB1;
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+}
+
+.portfolio .portfolio-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.portfolio .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-img img {
+  width: 50%; /* Defina a largura para 50% */
+  height: auto; /* Mantenha a proporção */
+  object-fit: cover; /* Cobre a área do contêiner */
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+
+.portfolio .portfolio-item:hover img {
+  margin-left: 10px;
+}
+
+.portfolio .portfolio-text {
+  position: relative;
+  height: 20px;
+  width: calc(100% - 30px);
+  margin: -30px 15px 30px 15px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+}
+
+.portfolio .portfolio-text h3 {
+  width: calc(100% - 70px);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 0 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-text a.btn {
+  width: 25px;
+  height: 25px;
+  padding: 0 0 2px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.portfolio .portfolio-item:hover a.btn {
+  color: #EF233C;
+  background: transparent;
+  box-shadow: inset 0 0 0 0 #EF233C;
+  border-color: #EF233C;
+}
