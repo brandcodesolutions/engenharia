@@ -536,9 +536,6 @@ a:focus {
   width: 300px; /* Largura fixa para as caixas */
   margin: 15px; /* Margem em todas as direções para espaçamento */
   padding: 20px; /* Padding interno da caixa */
-  border: 1px solid #ccc; /* Borda opcional para definição */
-  border-radius: 8px; /* Bordas arredondadas */
-  background-color: #f9f9f9; /* Cor de fundo das caixas */
 }
 
 .service_section .box .img-box {
@@ -1215,7 +1212,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #00113d;
   border-radius: 100%;
   width: 35px;
   height: 35px;

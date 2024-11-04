@@ -369,7 +369,7 @@ contato@jorengenharia.com.br              </span>
           <div class="col-md-6 col-lg-3">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s3.png" alt="">
+                <img src="images/s3.png" href="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -385,7 +385,7 @@ contato@jorengenharia.com.br              </span>
           <div class="col-md-6 col-lg-3">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s1.png" alt="">
+                <img src="images/s1.png" href="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -401,7 +401,7 @@ contato@jorengenharia.com.br              </span>
           <div class="col-md-6 col-lg-3">
             <div class="box " >
               <div class="img-box">
-                <img src="images/s4.png" alt="">
+                <img src="images/s4.png" href="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -1101,41 +1101,50 @@ function sendWhatsApp(event) {
               </h5>
               <div class="post_box">
                 <div class="img-box">
-                  <img src="images/instagram4.jpeg" alt="">
+                  <img src="images/instagram4.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram2.jpeg" alt="">
+                  <img src="images/instagram2.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram3.jpeg" alt="">
+                  <img src="images/instagram3.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram1.jpeg" alt="">
+                  <img src="images/instagram1.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram5.jpeg" alt="">
+                  <img src="images/instagram5.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram6.jpeg" alt="">
+                  <img src="images/instagram6.jpeg" alt="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="info_form">
-              <h4>
-                FALE DIRETAMENTE CONOSCO
-              </h4>
-              <form action="">
-                <input type="text" placeholder="Escreva sua mensagem" />
-                <button type="submit">
-                  Enviar
-                </button>
+              <h4>FALE DIRETAMENTE CONOSCO</h4>
+              <form action="javascript:void(0);" onsubmit="sendToWhatsApp()">
+                <input type="text" id="whatsappMessage" placeholder="Escreva sua mensagem" required />
+                <button type="submit">Enviar</button>
               </form>
             </div>
           </div>
-        </div>
-      </div>
+          
+          <script>
+            function sendToWhatsApp() {
+              const message = document.getElementById("whatsappMessage").value.trim();
+              if (message) { // Verifica se a mensagem não está vazia
+                const phoneNumber = "5511996169619";
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                
+                window.open(url, "_blank");
+              } else {
+                alert("Por favor, digite uma mensagem."); // Alerta se a mensagem estiver vazia
+              }
+            }
+          </script>
+          
       <div class="info_bottom">
         <div class="row">
           <div class="col-md-2">
@@ -1171,7 +1180,7 @@ function sendWhatsApp(event) {
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> Todos Os Direitos Reservados <br>
-        <a href="https://html.design/">Desenvolvido Por BrandCode Solutions</a>
+        <a href="https://www.instagram.com/agencialimino/">Desenvolvido Por BrandCode Solutions</a>
       </p>
     </div>
   </footer>
