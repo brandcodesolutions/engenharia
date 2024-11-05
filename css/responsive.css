@@ -37,7 +37,7 @@
   .slider_section {
     padding: 75px 0;
   }
-
+}
   @media (max-width: 768px) {
     .slider_section {
       background-position: center bottom; /* Posiciona a imagem de fundo na metade inferior */
@@ -186,5 +186,13 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+}
+
+/* Media Query para manter 4 colunas em dispositivos menores */
+@media (max-width: 768px) {
+  .project_section .col-md-3 {
+    flex: 0 0 25%; /* 4 colunas na linha */
+    max-width: 25%; /* Garante que a coluna não exceda 25% */
   }
 }

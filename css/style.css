@@ -651,7 +651,6 @@ a:focus {
 
 .project_section .heading_container h2 {
   color: #000000;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -1008,7 +1007,7 @@ a:focus {
   padding: 12px 55px;
   background-color: #ff6807;
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: none;
@@ -1213,7 +1212,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #00113d;
-  border-radius: 100%;
+  border-radius: 20%;
   width: 35px;
   height: 35px;
   color: #ff6807;
@@ -1247,104 +1246,102 @@ a:focus {
 /******** Portfolio CSS ********/
 /*******************************/
 .portfolio {
-  position: relative;
-  padding: 45px 0 15px 0;
+  position: relative; /* Mantém o posicionamento relativo para elementos filhos */
 }
 
 .portfolio #portfolio-filter {
-  padding: 0;
+  padding: 10px;
   margin: -15px 0 25px 0;
-  list-style: none;
-  font-size: 0;
-  text-align: center;
+  list-style: none; /* Remove marcadores de lista */
+  font-size: 0; /* Esconde texto dos itens da lista para alinhamento central */
+  text-align: center; /* Centraliza os itens do filtro */
 }
 
 .portfolio #portfolio-filter li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-  background: #025DB1;
-  border: 2px solid transparent;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 50px #025DB1;
-  transition: ease-out 0.3s;
-  -webkit-transition: ease-out 0.3s;
-  -moz-transition: ease-out 0.3s;
+  cursor: pointer; /* Aponta que os itens são clicáveis */
+  display: inline-block; /* Alinha os itens em linha */
+  margin: 5px; /* Espaçamento entre os itens */
+  padding: 6px 12px; /* Espaçamento interno dos botões */
+  font-size: 14px; /* Tamanho da fonte dos botões */
+  font-weight: 600; /* Peso da fonte */
+  color: #ffffff; /* Cor do texto */
+  background: #025DB1; /* Cor de fundo do botão */
+  border: 2px solid transparent; /* Borda invisível por padrão */
+  border-radius: 0; /* Sem bordas arredondadas */
+  box-shadow: inset 0 0 0 50px #025DB1; /* Efeito de sombra interna */
+  transition: ease-out 0.3s; /* Transição suave para efeitos */
 }
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-  color: #025DB1;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #025DB1;
-  border-color: #025DB1;
+  color: #025DB1; /* Cor do texto ao passar o mouse ou quando ativo */
+  background: transparent; /* Fundo transparente */
+  box-shadow: inset 0 0 0 0 #025DB1; /* Remove a sombra interna */
+  border-color: #025DB1; /* Borda visível quando ativo */
 }
 
 .portfolio .portfolio-item {
-  position: relative;
+  position: relative; /* Permite posicionamento relativo para elementos filhos */
+  margin-bottom: 20px; /* Espaçamento entre as linhas de itens */
 }
 
 .portfolio .portfolio-wrap {
-  position: relative;
-  width: 100%;
+  position: relative; /* Para posicionamento relativo se necessário */
+  width: 100%; /* Largura completa do contêiner */
 }
 
 .portfolio .portfolio-img {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* Mantém o posicionamento relativo */
+  overflow: hidden; /* Oculta partes da imagem que saem do contêiner */
 }
 
 .portfolio .portfolio-img img {
-  width: 50%; /* Defina a largura para 50% */
-  height: auto; /* Mantenha a proporção */
+  width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+  height: auto; /* Mantém a proporção */
   object-fit: cover; /* Cobre a área do contêiner */
-  transform: scale(1.1);
-  transition: .5s;
+  transform: scale(1.1); /* Efeito de zoom */
+  transition: .5s; /* Transição suave para efeitos */
 }
 
-
 .portfolio .portfolio-item:hover img {
-  margin-left: 10px;
+  margin-left: 10px; /* Leve deslocamento da imagem ao passar o mouse */
 }
 
 .portfolio .portfolio-text {
-  position: relative;
-  height: 20px;
-  width: calc(100% - 30px);
-  margin: -30px 15px 30px 15px;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+  position: relative; /* Para posicionamento relativo */
+  height: 20px; /* Altura fixa para o texto */
+  width: calc(100% - 30px); /* Largura com margem */
+  margin: -30px 15px 30px 15px; /* Margens em torno do texto */
+  display: flex; /* Usar flexbox para alinhamento */
+  align-items: center; /* Centraliza verticalmente */
+  background: #ffffff; /* Fundo branco */
+  box-shadow: 0 0 15px rgba(0, 0, 0, .12); /* Sombra do texto */
 }
 
 .portfolio .portfolio-text h3 {
-  width: calc(100% - 70px);
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 0 15px;
-  white-space: nowrap;
-  overflow: hidden;
+  width: calc(100% - 70px); /* Largura do título */
+  font-size: 18px; /* Tamanho da fonte do título */
+  font-weight: 600; /* Peso da fonte do título */
+  margin: 0 0 0 15px; /* Margens ao redor do título */
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Esconde o excesso de texto */
 }
 
 .portfolio .portfolio-text a.btn {
-  width: 25px;
-  height: 25px;
-  padding: 0 0 2px 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: 100;
+  width: 25px; /* Largura do botão */
+  height: 25px; /* Altura do botão */
+  padding: 0 0 2px 1px; /* Espaçamento interno do botão */
+  display: flex; /* Usar flexbox para centralizar o ícone */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  font-size: 45px; /* Tamanho da fonte do ícone */
+  font-weight: 100; /* Peso da fonte do ícone */
 }
 
 .portfolio .portfolio-item:hover a.btn {
-  color: #EF233C;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #EF233C;
-  border-color: #EF233C;
+  color: #EF233C; /* Cor do ícone ao passar o mouse */
+  background: transparent; /* Fundo transparente ao passar o mouse */
+  box-shadow: inset 0 0 0 0 #EF233C; /* Remove a sombra interna */
+  border-color: #EF233C; /* Borda visível ao passar o mouse */
 }
+

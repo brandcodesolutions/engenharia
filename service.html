@@ -61,6 +61,92 @@
               <span>
 contato@jorengenharia.com.br              </span>
             </a>
+            <div class="contact_nav_btn"></div>
+            <li class="contact_nav_btn">
+              <a class="nav-link" href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20uma%20visita!">Solicitar Visita! <span class="sr-only">(current)</span></a>
+            </li>
+
+            <style>
+              .contact_nav {
+                  list-style: none; /* Remove a marcação padrão da lista */
+                  padding: 0; /* Remove o preenchimento padrão */
+                  display: flex; /* Flexbox para alinhar itens */
+                  gap: 20px; /* Espaçamento entre os itens */
+              }
+          
+              .contact_nav li {
+                  display: inline-block; /* Garante que os itens da lista sejam exibidos em linha */
+              }
+          
+              .contact_nav a {
+                  display: inline-flex; /* Flexível para alinhar ícone e texto */
+                  align-items: center; /* Centraliza verticalmente */
+                  padding: 10px 15px; /* Espaçamento interno */
+                  background-color: #00113d; /* Cor de fundo */
+                  color: #fff; /* Cor do texto */
+                  text-decoration: none; /* Remove o sublinhado */
+                  border-radius: 5px; /* Bordas arredondadas */
+                  transition: background-color 0.3s; /* Efeito de transição */
+                  font-size: 16px; /* Tamanho da fonte */
+              }
+          
+              .contact_nav a:hover {
+                  background-color: #00113d; /* Cor ao passar o mouse */
+              }
+          
+              .contact_nav a i {
+                  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+              }
+          
+              /* Ajustes para responsividade */
+              @media (max-width: 600px) {
+                  .contact_nav a {
+                      font-size: 14px; /* Tamanho da fonte no mobile */
+                      padding: 8px 12px; /* Ajuste de padding no mobile */
+                  }
+              }
+          </style>
+
+<style>
+  .contact_nav_btn {
+      list-style: none; /* Remove a marcação padrão da lista */
+      padding: 0; /* Remove o preenchimento padrão */
+      display: flex; /* Flexbox para alinhar itens */
+      gap: 20px; /* Espaçamento entre os itens */
+  }
+
+  .contact_nav_btn li {
+      display: inline-block; /* Garante que os itens da lista sejam exibidos em linha */
+  }
+
+  .contact_nav_btn a {
+      display: inline-flex; /* Flexível para alinhar ícone e texto */
+      align-items: center; /* Centraliza verticalmente */
+      padding: 10px 15px; /* Espaçamento interno */
+      background-color: #ff6807; /* Cor de fundo */
+      color: #fff; /* Cor do texto */
+      text-decoration: none; /* Remove o sublinhado */
+      border-radius: 5px; /* Bordas arredondadas */
+      transition: background-color 0.3s; /* Efeito de transição */
+      font-size: 16px; /* Tamanho da fonte */
+  }
+
+  .contact_nav_btn a:hover {
+      background-color: #9a3c00; /* Cor ao passar o mouse */
+  }
+
+  .contact_nav_btn a i {
+      margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+  }
+
+  /* Ajustes para responsividade */
+  @media (max-width: 600px) {
+      .contact_a_btn a {
+          font-size: 14px; /* Tamanho da fonte no mobile */
+          padding: 8px 12px; /* Ajuste de padding no mobile */
+      }
+  }
+</style>
             
           </div>
           <div class="social_box">
@@ -105,9 +191,7 @@ contato@jorengenharia.com.br              </span>
                 <li class="nav-item">
                   <a class="nav-link" href="testimonial.html">Depoimentos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contate-nos</a>
-                </li>
+                
               </ul>
             </div>
           </nav>
@@ -122,156 +206,143 @@ contato@jorengenharia.com.br              </span>
         <div class="container">
             <div class="heading_container">
                 <h2>Serviços</h2>
-                <p>Saiba sobre nossos serviços e como atendemos suas necessidades.</p><br><br><br><br><br>
+                <p>Saiba sobre nossos serviços e como atendemos suas necessidades.</p>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-image">
-                        <img src="images/service1.png" alt="Serviço 1">
-                    </div>
-                    <div class="box">
-                        <div class="detail-box">
-                            <div class="img-box">
-                                <img src="images/s3.png" alt="">
-                            </div>
-                            <h5>Avaliações e Perícias Especializadas</h5>
-                            <br>
-                            <b><p>Perícia / Auxiliar Jurídico:</p></b>
-                            <p>A perícia judicial em engenharia é uma avaliação técnica realizada por um engenheiro nomeado pelo juiz para esclarecer questões técnicas em processos judiciais. Ela envolve a análise de projetos, estruturas, materiais e condições de segurança, produzindo laudos que ajudam na decisão do caso. O objetivo é fornecer informações objetivas e fundamentadas sobre aspectos técnicos relevantes.</p>
-                            <br>
-                            <b><p>Avaliação Imobiliária:</p></b>
-                            <p>A avaliação imobiliária é o processo de determinar o valor de um imóvel, considerando fatores como localização, características físicas, condições do mercado e aspectos legais. É realizada por profissionais capacitados, engenheiros civis, para fornecer laudos que orientam transações, financiamentos e questões jurídicas. O objetivo é garantir uma estimativa precisa e justa do valor do bem.</p>
-                            <br>
-                            <b><p>Vistoria de Recebimento de Imóvel:</p></b>
-                            <p>A vistoria de recebimento de imóvel é uma inspeção realizada para verificar as condições do imóvel antes da aceitação final pelo comprador ou locatário. Ela avalia aspectos estruturais, acabamentos e sistemas, identificando possíveis problemas ou divergências em relação ao contrato. O objetivo é assegurar que o imóvel esteja em conformidade com as especificações acordadas e prometidas pela construtora do imóvel.</p>
-                        </div>
-                    </div>
+            <div class="service">
+                <div class="service-image">
+                    <img src="images/service1.png" alt="Serviço 1">
                 </div>
-                <br><br><br>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-image">
-                        <img src="images/service2.png" alt="Serviço 2">
+                <div class="detail-box">
+                    <div class="icon-title">
+                        <img src="images/s3.png" alt="Ícone Avaliações e Perícias">
+                        <h5>Avaliações e Perícias Especializadas</h5>
                     </div>
-                    <div class="box">
-                        <div class="detail-box">
-                            <div class="img-box">
-                                <img src="images/s1.png" alt="">
-                            </div>
-                            <h5>Construção e Gerenciamento</h5>
-                            <br>
-                            <b><p>Construção e Reformas:</p></b>
-                            <p>Oferecemos serviços completos de construção e reformas, atendendo a todas as suas necessidades, desde pequenos reparos até grandes projetos. Nossa equipe dedicada garante qualidade, eficiência e atenção aos detalhes para transformar sua visão em realidade.</p>
-                            <br>
-                            <b><p>Gerenciamento de Projeto:</p></b>
-                            <p>Gerenciamento de projeto é o processo de planejamento, coordenação e controle de todas as etapas de um projeto de construção. Envolve a supervisão de recursos, prazos e custos, garantindo que a obra seja concluída de acordo com as especificações e normas técnicas. O objetivo é otimizar a execução e garantir a qualidade e a segurança da construção.</p>
-                        </div>
-                    </div>
+                    <p><b>Perícia / Auxiliar Jurídico:</b> A perícia judicial em engenharia é uma avaliação técnica realizada por um engenheiro nomeado pelo juiz para esclarecer questões técnicas em processos judiciais. Ela envolve a análise de projetos, estruturas, materiais e condições de segurança, produzindo laudos que ajudam na decisão do caso.</p>
+                    <p><b>Avaliação Imobiliária:</b> A avaliação imobiliária é o processo de determinar o valor de um imóvel, considerando fatores como localização, características físicas, condições do mercado e aspectos legais. É realizada por engenheiros civis para fornecer laudos que orientam transações e financiamentos.</p>
+                    <p><b>Vistoria de Recebimento de Imóvel:</b> A vistoria de recebimento de imóvel é uma inspeção realizada para verificar as condições do imóvel antes da aceitação final pelo comprador ou locatário.</p><br><br>
                 </div>
-                <br><br><br>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-image">
-                        <img src="images/service3.png" alt="Serviço 3">
+            </div>
+            <div class="service">
+                <div class="service-image">
+                    <img src="images/service2.png" alt="Serviço 2">
+                </div>
+                <div class="detail-box">
+                    <div class="icon-title">
+                        <img src="images/s1.png" alt="Ícone Construção e Gerenciamento">
+                        <h5>Construção e Gerenciamento</h5>
                     </div>
-                    <div class="box">
-                        <div class="detail-box">
-                            <div class="img-box">
-                                <img src="images/s4.png" alt="">
-                            </div>
-                            <h5>Soluções em Meio Ambiente</h5>
-                            <br>
-                            <b><p>Reuso de Água:</p></b>
-                            <p>O projeto de reuso de água envolve a coleta, tratamento e reutilização da água já utilizada. A implantação inclui a instalação de sistemas de filtragem e armazenamento, garantindo a qualidade da água reaproveitada. Essa prática contribui para a sustentabilidade, reduzindo o consumo de água potável e os custos operacionais.</p>
-                            <br>
-                        </div>
+                    <p><b>Construção e Reformas:</b> Oferecemos serviços completos de construção e reformas, desde pequenos reparos até grandes projetos, com qualidade e eficiência.</p>
+                    <p><b>Gerenciamento de Projeto:</b> Planejamento, coordenação e controle de todas as etapas de um projeto de construção, garantindo que a obra seja concluída de acordo com as especificações e normas técnicas.</p><br><br>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-image">
+                    <img src="images/service3.png" alt="Serviço 3">
+                </div>
+                <div class="detail-box">
+                    <div class="icon-title">
+                        <img src="images/s4.png" alt="Ícone Soluções em Meio Ambiente">
+                        <h5>Soluções em Meio Ambiente</h5>
                     </div>
+                    <p><b>Reuso de Água:</b> O projeto de reuso de água envolve a coleta, tratamento e reutilização da água, contribuindo para a sustentabilidade e reduzindo o consumo de água potável.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-  
-  <style>
-  /* Container da seção de serviços */
-  .service-image {
-    margin-bottom: 10px; /* Espaçamento entre a imagem do serviço e o box */
+<style>
+/* Estilo geral da seção */
+.service_section {
+    padding: 40px 0;
+}
+
+.heading_container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading_container h2 {
+    color: #ff6807; /* Define a cor do título */
+}
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.service-image {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .service-image img {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 5px; /* Arredonda os cantos da imagem */
-}
-
-/* Você pode adicionar mais estilos conforme necessário para a imagem do serviço */
-
-.service_section .service_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Alinha os boxes em coluna */
-.service_section .row {
-    display: flex;
-    flex-direction: column; /* Alinha os boxes na vertical */
-    align-items: flex-start; /* Alinha os boxes à esquerda */
     width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-/* Ajuste das colunas para telas maiores */
-@media (min-width: 992px) {
-    .col-lg-3 {
-        width: 50%; /* Faz com que cada coluna ocupe metade da largura da tela */
-        margin: 20px 0; /* Margem vertical entre os boxes */
-        padding-left: 0; /* Remove padding à esquerda para que o box comece na margem */
-        padding-right: 15px; /* Adiciona um padding à direita */
-    }
+.detail-box {
+    text-align: left;
+}
+
+/* Estilo do ícone antes do título */
+.icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-title img {
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o título */
+}
+
+.icon-title h5 {
+    font-size: 1.4em;
+    margin: 0;
+}
+.icon-title h5 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #ff6807; /* Define a cor do título */
+}
+
+
+.detail-box p {
+    font-size: 1em;
+    margin: 5px 0;
+    line-height: 1.5;
 }
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 991px) {
-    .col-lg-3 {
-        margin: 15px 0; /* Margem vertical menor para dispositivos móveis */
-        padding-left: 0; /* Remove padding à esquerda para dispositivos móveis */
-        padding-right: 15px; /* Adiciona um padding à direita para dispositivos móveis */
+    .service {
+        margin-bottom: 20px;
+    }
+}
+/* Centralizar o título na versão mobile */
+@media (max-width: 767px) {
+    .heading_container {
+        display: flex;
+        justify-content: center; /* Centraliza o título horizontalmente */
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading_container h2 {
+        color: #ff6807; /* Cor do texto */
     }
 }
 
-.box {
-    width: 100%; /* Faz com que o box ocupe toda a largura disponível */
-    padding: 10px; /* Adiciona um padding interno */
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-}
 
-.img-box {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do box */
-    display: flex; /* Ativa o flexbox para centralizar a imagem */
-    justify-content: flex-start; /* Alinha a imagem à esquerda */
-}
-
-.detail-box {
-    width: 100%; /* Faz com que o detalhe ocupe toda a largura do box */
-    margin-left: 0; /* Alinha o detalhe à margem esquerda */
-}
-
-/* Alinhamento de texto no detalhe */
-.detail-box h5,
-.detail-box p,
-.detail-box a {
-    text-align: left; /* Alinha o texto à esquerda */
-    margin: 0
-  }
-
-  .service-image {
-        width: 115%; /* A imagem ocupa toda a largura */
-        margin-bottom: 0px; /* Espaçamento entre imagem e texto */
-    }
+</style>
 
 
-    </style>
-
-  <!-- end service section -->
 
 
   <section class="info_section ">
