@@ -37,8 +37,8 @@
 <body class="sub_page">
 
   <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
+     <!-- header section strats -->
+     <header class="header_section">
       <div class="header_top">
         <div class="container-fluid header_top_container">
           <div class="lang_box dropdown">
@@ -201,282 +201,238 @@ contato@jorengenharia.com.br              </span>
     <!-- end header section -->
   </div>
 
-  <section class="service_section layout_padding">
-    <div class="service_container">
-        <div class="container">
-            <div class="heading_container">
-                <h2>Serviços</h2>
-                <p>Saiba sobre nossos serviços e como atendemos suas necessidades.</p>
+
+<!-- service section -->
+
+<section class="service_section layout_padding">
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container">
+        <h2>
+          Serviços
+        </h2>
+        <p>
+          Saiba sobre nossos serviços e como atendemos suas necessidades.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s3.png" href="">
             </div>
-            <div class="service">
-                <div class="service-image">
-                    <img src="images/service1.png" alt="Serviço 1">
-                </div>
-                <div class="detail-box">
-                    <div class="icon-title">
-                        <img src="images/s3.png" alt="Ícone Avaliações e Perícias">
-                        <h5>Avaliações e Perícias Especializadas</h5>
-                    </div>
-                    <p><b>Perícia / Auxiliar Jurídico:</b> A perícia judicial em engenharia é uma avaliação técnica realizada por um engenheiro nomeado pelo juiz para esclarecer questões técnicas em processos judiciais. Ela envolve a análise de projetos, estruturas, materiais e condições de segurança, produzindo laudos que ajudam na decisão do caso.</p>
-                    <p><b>Avaliação Imobiliária:</b> A avaliação imobiliária é o processo de determinar o valor de um imóvel, considerando fatores como localização, características físicas, condições do mercado e aspectos legais. É realizada por engenheiros civis para fornecer laudos que orientam transações e financiamentos.</p>
-                    <p><b>Vistoria de Recebimento de Imóvel:</b> A vistoria de recebimento de imóvel é uma inspeção realizada para verificar as condições do imóvel antes da aceitação final pelo comprador ou locatário.</p><br><br>
-                </div>
+            <div class="detail-box">
+              <h5>
+                Avaliações e Perícias Especializadas
+              </h5>
+              <p>O segmento de Avaliações e Perícias garante a segurança em obras e imóveis. Com vistorias e avaliações, podemos documentar condições e valores, prevenindo conflitos e oferecendo laudos técnicos para negociações.</p>
+              <a href="avaliacoes.html">
+                Ler Mais
+              </a>
             </div>
-            <div class="service">
-                <div class="service-image">
-                    <img src="images/service2.png" alt="Serviço 2">
-                </div>
-                <div class="detail-box">
-                    <div class="icon-title">
-                        <img src="images/s1.png" alt="Ícone Construção e Gerenciamento">
-                        <h5>Construção e Gerenciamento</h5>
-                    </div>
-                    <p><b>Construção e Reformas:</b> Oferecemos serviços completos de construção e reformas, desde pequenos reparos até grandes projetos, com qualidade e eficiência.</p>
-                    <p><b>Gerenciamento de Projeto:</b> Planejamento, coordenação e controle de todas as etapas de um projeto de construção, garantindo que a obra seja concluída de acordo com as especificações e normas técnicas.</p><br><br>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-image">
-                    <img src="images/service3.png" alt="Serviço 3">
-                </div>
-                <div class="detail-box">
-                    <div class="icon-title">
-                        <img src="images/s4.png" alt="Ícone Soluções em Meio Ambiente">
-                        <h5>Soluções em Meio Ambiente</h5>
-                    </div>
-                    <p><b>Reuso de Água:</b> O projeto de reuso de água envolve a coleta, tratamento e reutilização da água, contribuindo para a sustentabilidade e reduzindo o consumo de água potável.</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s1.png" href="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Construção e Gerenciamento
+              </h5>
+              <p>O segmento de Construção e Gerenciamento de Obras oferece soluções para construção e reforma, com foco em qualidade e eficiência, garantindo o acompanhamento de todas as etapas e o cumprimento de prazos.</p>
+              <a href="construcao.html">
+                Ler Mais
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box " >
+            <div class="img-box">
+              <img src="images/s4.png" href="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Soluções em Meio Ambiente
+              </h5>
+              <p>
+                O segmento de Soluções em Meio Ambiente oferece soluções para o reuso de água em seu espaço. Também inclui sistemas de tratamento de esgoto e água, promovendo sustentabilidade e economia de recursos.
+              </p>
+              <a href="meioambiente.html">
+                Ler Mais
+              </a>
+            </div>
+          </div>
+        </div>
 </section>
 
 <style>
-/* Estilo geral da seção */
-.service_section {
-    padding: 40px 0;
+  .service_section .service_container {
+  display: flex; /* Ativa o Flexbox para a container */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte, se necessário */
 }
 
-.heading_container {
-    text-align: center;
-    margin-bottom: 40px;
+.service_section .row {
+  display: flex; /* Ativa o Flexbox para a linha */
+  justify-content: center; /* Centraliza as colunas dentro da linha */
+  width: 100%; /* Garante que a linha utilize toda a largura disponível */
+}
+</style>
+<style>
+@media (min-width: 992px) {
+  .col-lg-3 {
+      margin: 20px; /* Margem para telas de desktop */
+  }
 }
 
-.heading_container h2 {
-    color: #ff6807; /* Define a cor do título */
-}
-
-
-.service {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
-}
-
-.service-image {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.service-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.detail-box {
-    text-align: left;
-}
-
-/* Estilo do ícone antes do título */
-.icon-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.icon-title img {
-    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
-    height: 30px;
-    margin-right: 10px; /* Espaçamento entre o ícone e o título */
-}
-
-.icon-title h5 {
-    font-size: 1.4em;
-    margin: 0;
-}
-.icon-title h5 {
-    font-size: 1.4em;
-    margin: 0;
-    color: #ff6807; /* Define a cor do título */
-}
-
-
-.detail-box p {
-    font-size: 1em;
-    margin: 5px 0;
-    line-height: 1.5;
-}
-
-/* Estilos para dispositivos móveis */
+/* Para telas menores, você pode definir margens diferentes ou nenhuma */
 @media (max-width: 991px) {
-    .service {
-        margin-bottom: 20px;
-    }
+  .col-lg-3 {
+      margin: 15px; /* Margem menor para dispositivos móveis, se desejado */
+  }
 }
-/* Centralizar o título na versão mobile */
-@media (max-width: 767px) {
-    .heading_container {
-        display: flex;
-        justify-content: center; /* Centraliza o título horizontalmente */
-        align-items: center;
-        text-align: center;
-    }
-
-    .heading_container h2 {
-        color: #ff6807; /* Cor do texto */
-    }
-}
-
-
 </style>
 
+<!-- end service section -->
 
 
 
-  <section class="info_section ">
+ <!-- info section -->
+ <section class="info_section ">
 
-    <div class="container">
-      <div class="contact_nav">
-        <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Telefone : (11) 9 9616-9619
-          </span>
-        </a>
-        <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do+site!">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>
-            E-mail : contato@jorengenharia.com.br
-          </span>
-        </a>
-        <a href="https://maps.app.goo.gl/MTAdhro99TdYBFRs8">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Localização : São Paulo - SP
-          </span>
-        </a>
-      </div>
+  <div class="container">
+    <div class="contact_nav">
+      <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <span>
+          Telefone : (11) 9 9616-9619
+        </span>
+      </a>
+      <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do+site!">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span>
+          E-mail : contato@jorengenharia.com.br
+        </span>
+      </a>
+      <a href="https://maps.app.goo.gl/MTAdhro99TdYBFRs8">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span>
+          Localização : São Paulo - SP
+        </span>
+      </a>
+    </div>
 
-      <div class="info_top ">
-        <div class="row info_main_row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="info_links">
-              <h4>
-                LINKS
-              </h4>
-              <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="" href="service.html">Serviços</a>
-                <a class="" href="about.html"> Sobre nós</a>
-                <a class="" href="project.html">Projetos</a>
-                <a class="" href="testimonial.html">Depoimentos</a>
-                <a class="" href="contact.html">Contate-nos</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
-            <div class="info_post">
-              <h5>
-                INSTAGRAM FEEDS
-              </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/instagram4.jpeg" alt="">
-                </div>
-                <div class="img-box">
-                  <img src="images/instagram2.jpeg" alt="">
-                </div>
-                <div class="img-box">
-                  <img src="images/instagram3.jpeg" alt="">
-                </div>
-                <div class="img-box">
-                  <img src="images/instagram4.jpeg" alt="">
-                </div>
-                <div class="img-box">
-                  <img src="images/instagram5.jpeg" alt="">
-                </div>
-                <div class="img-box">
-                  <img src="images/instagram6.jpeg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info_form">
-              <h4>FALE DIRETAMENTE CONOSCO</h4>
-              <form action="javascript:void(0);" onsubmit="sendToWhatsApp()">
-                <input type="text" id="whatsappMessage" placeholder="Escreva sua mensagem" required />
-                <button type="submit">Enviar</button>
-              </form>
-            </div>
-          </div>
-          
-          <script>
-            function sendToWhatsApp() {
-              const message = document.getElementById("whatsappMessage").value.trim();
-              if (message) { // Verifica se a mensagem não está vazia
-                const phoneNumber = "5511996169619";
-                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                
-                window.open(url, "_blank");
-              } else {
-                alert("Por favor, digite uma mensagem."); // Alerta se a mensagem estiver vazia
-              }
-            }
-          </script>
-          
-      <div class="info_bottom">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="info_logo">
-              <a href="">
-                <img src="images/logo2.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 ml-auto">
-            <div class="social_box">
-              <a href="https://www.facebook.com/engesolengenharia/">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-              </a>
+    <div class="info_top ">
+      <div class="row info_main_row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="info_links">
+            <h4>
+              LINKS
+            </h4>
+            <div class="info_links_menu">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="" href="service.html">Serviços</a>
+              <a class="" href="about.html"> Sobre nós</a>
+              <a class="" href="project.html">Projetos</a>
+              <a class="" href="testimonial.html">Depoimentos</a>
+              <a class="" href="contact.html">Contate-nos</a>
             </div>
           </div>
         </div>
-
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+          <div class="info_post">
+            <h5>
+              INSTAGRAM FEEDS
+            </h5>
+            <div class="post_box">
+              <div class="img-box">
+                <img src="images/instagram4.jpeg" alt="">
+              </div>
+              <div class="img-box">
+                <img src="images/instagram2.jpeg" alt="">
+              </div>
+              <div class="img-box">
+                <img src="images/instagram3.jpeg" alt="">
+              </div>
+              <div class="img-box">
+                <img src="images/instagram1.jpeg" alt="">
+              </div>
+              <div class="img-box">
+                <img src="images/instagram5.jpeg" alt="">
+              </div>
+              <div class="img-box">
+                <img src="images/instagram6.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info_form">
+            <h4>FALE DIRETAMENTE CONOSCO</h4>
+            <form action="javascript:void(0);" onsubmit="sendToWhatsApp()">
+              <input type="text" id="whatsappMessage" placeholder="Escreva sua mensagem" required />
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+        
+        <script>
+          function sendToWhatsApp() {
+            const message = document.getElementById("whatsappMessage").value.trim();
+            if (message) { // Verifica se a mensagem não está vazia
+              const phoneNumber = "5511996169619";
+              const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+              
+              window.open(url, "_blank");
+            } else {
+              alert("Por favor, digite uma mensagem."); // Alerta se a mensagem estiver vazia
+            }
+          }
+        </script>
+        
+    <div class="info_bottom">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="info_logo">
+            <a href="">
+              <img src="images/logo2.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 ml-auto">
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
     </div>
-  </section>
-  <!-- end info_section -->
+  </div>
+</section>
+<!-- end info_section -->
 
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> Todos Os Direitos Reservados <br>
-        <a href="https://www.instagram.com/agencialimino/">Desenvolvido Por BrandCode Solutions</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> Todos Os Direitos Reservados <br>
+      <a href="https://www.instagram.com/agencialimino/">Desenvolvido Por BrandCode Solutions</a>
+    </p>
+  </div>
+</footer>
+<!-- footer section -->
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
