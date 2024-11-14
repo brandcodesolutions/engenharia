@@ -1111,47 +1111,7 @@ a:focus {
   color: #ff6807;
 }
 
-.info_section .info_post .post_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.info_section .info_post .post_box .img-box {
-  min-width: 45px;
-  max-width: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  -ms-flex-preferred-size: calc(33% - 10px);
-      flex-basis: calc(33% - 10px);
-  padding: 5px;
-  margin: 5px;
-}
-
-.info_section .info_post .post_box .img-box img {
-  width: 100%;
-}
-
-.info_section .info_post .post_box p {
-  margin: 0;
-}
-
-.info_section .info_post .post_box:not(:nth-last-child(1)) {
-  margin-bottom: 15px;
-}
 
 .info_section .info_form input {
   width: 100%;

@@ -37,167 +37,169 @@
 <body class="sub_page">
 
   <div class="hero_area">
-     <!-- header section strats -->
-     <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid header_top_container">
-          <div class="lang_box dropdown">
-            
-            <div class="dropdown-menu ">
-              <a href="#" class="dropdown-item">
-              </a>
-            </div>
-            
-          </div>
-          <div class="contact_nav">
-            <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                (11) 9 9616-9619
-              </span>
-            </a>
-            <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do+site!">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-contato@jorengenharia.com.br              </span>
-            </a>
-            <div class="contact_nav_btn"></div>
-            <li class="contact_nav_btn">
-              <a class="nav-link" href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20uma%20visita!">Solicitar Visita! <span class="sr-only">(current)</span></a>
+    <!-- header section strats -->
+<header class="header_section">
+  <div class="header_top">
+    <div class="container-fluid header_top_container">
+      <div class="lang_box dropdown">
+        <div class="dropdown-menu ">
+          <a href="#" class="dropdown-item"></a>
+        </div>
+      </div>
+      <div class="contact_nav">
+        <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>(11) 9 9616-9619</span>
+        </a>
+        <a href="mailto:contato@jorengenharia.com.br?subject=Ol%C3%A1,+venho+atrav%C3%A9s+do%20site!">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>contato@jorengenharia.com.br</span>
+        </a>
+        <li class="contact_nav_btn">
+          <a class="nav-link" href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20uma%20visita!">Solicitar Visita!</a>
+        </li>
+      </div>
+      <div class="social_box">
+        <a href="https://www.facebook.com/engesolengenharia/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header_bottom">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Depoimentos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- end header section -->
 
-            <style>
-              .contact_nav {
-                  list-style: none; /* Remove a marcação padrão da lista */
-                  padding: 0; /* Remove o preenchimento padrão */
-                  display: flex; /* Flexbox para alinhar itens */
-                  gap: 20px; /* Espaçamento entre os itens */
-              }
-          
-              .contact_nav li {
-                  display: inline-block; /* Garante que os itens da lista sejam exibidos em linha */
-              }
-          
-              .contact_nav a {
-                  display: inline-flex; /* Flexível para alinhar ícone e texto */
-                  align-items: center; /* Centraliza verticalmente */
-                  padding: 10px 15px; /* Espaçamento interno */
-                  background-color: #00113d; /* Cor de fundo */
-                  color: #fff; /* Cor do texto */
-                  text-decoration: none; /* Remove o sublinhado */
-                  border-radius: 5px; /* Bordas arredondadas */
-                  transition: background-color 0.3s; /* Efeito de transição */
-                  font-size: 16px; /* Tamanho da fonte */
-              }
-          
-              .contact_nav a:hover {
-                  background-color: #00113d; /* Cor ao passar o mouse */
-              }
-          
-              .contact_nav a i {
-                  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-              }
-          
-              /* Ajustes para responsividade */
-              @media (max-width: 600px) {
-                  .contact_nav a {
-                      font-size: 14px; /* Tamanho da fonte no mobile */
-                      padding: 8px 12px; /* Ajuste de padding no mobile */
-                  }
-              }
-          </style>
-
+<!-- CSS para fixar o header -->
 <style>
+  .header_section {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Garante que ele fique no topo */
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    background-color: #fff; /* Cor de fundo para o cabeçalho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona a sombra */
+  }
+
+  /* Adiciona um espaçamento para o conteúdo abaixo do cabeçalho fixo */
+  body {
+    padding-top: 120px; /* Ajuste conforme a altura do seu cabeçalho */
+  }
+
+  /* Os estilos de .contact_nav, .contact_nav_btn e outros permanecem os mesmos */
+  .contact_nav {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+  }
+
+  .contact_nav li {
+      display: inline-block;
+  }
+
+  .contact_nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #00113d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: 16px;
+  }
+
+  .contact_nav a:hover {
+      background-color: #00113d;
+  }
+
+  .contact_nav a i {
+      margin-right: 8px;
+  }
+
+  @media (max-width: 600px) {
+      .contact_nav a {
+          font-size: 14px;
+          padding: 8px 12px;
+      }
+  }
+
   .contact_nav_btn {
-      list-style: none; /* Remove a marcação padrão da lista */
-      padding: 0; /* Remove o preenchimento padrão */
-      display: flex; /* Flexbox para alinhar itens */
-      gap: 20px; /* Espaçamento entre os itens */
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
   }
 
   .contact_nav_btn li {
-      display: inline-block; /* Garante que os itens da lista sejam exibidos em linha */
+      display: inline-block;
   }
 
   .contact_nav_btn a {
-      display: inline-flex; /* Flexível para alinhar ícone e texto */
-      align-items: center; /* Centraliza verticalmente */
-      padding: 10px 15px; /* Espaçamento interno */
-      background-color: #ff6807; /* Cor de fundo */
-      color: #fff; /* Cor do texto */
-      text-decoration: none; /* Remove o sublinhado */
-      border-radius: 5px; /* Bordas arredondadas */
-      transition: background-color 0.3s; /* Efeito de transição */
-      font-size: 16px; /* Tamanho da fonte */
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #ff6807;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: 16px;
   }
 
   .contact_nav_btn a:hover {
-      background-color: #9a3c00; /* Cor ao passar o mouse */
+      background-color: #9a3c00;
   }
 
   .contact_nav_btn a i {
-      margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+      margin-right: 8px;
   }
 
-  /* Ajustes para responsividade */
   @media (max-width: 600px) {
-      .contact_a_btn a {
-          font-size: 14px; /* Tamanho da fonte no mobile */
-          padding: 8px 12px; /* Ajuste de padding no mobile */
+      .contact_nav_btn a {
+          font-size: 14px;
+          padding: 8px 12px;
       }
   }
 </style>
-            
-          </div>
-          <div class="social_box">
-            <a href="https://www.facebook.com/engesolengenharia/">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/engesol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="">
-            </a>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Serviços</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Sobre nós</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="project.html">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Depoimentos</a>
-                </li>
-                
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
     <!-- end header section -->
   </div>
 
@@ -306,30 +308,7 @@ contato@jorengenharia.com.br              </span>
     
   </section>
 
-  <section class="diagram">
-    <img src="images/diagram.png" alt="">
-  </section>
   
-  <style>
-    .diagram img {
-      width: 100vw;
-      height: auto;
-      margin-bottom: 10%;
-    }
-    body, html {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden; /* Evita rolagem horizontal indesejada */
-    }
-
-     /* Media Query para dispositivos móveis */
-  @media (max-width: 768px) {
-    .diagram img {
-      width: 100%;
-      margin-bottom: 20%;
-    }
-  }
-  </style>
   
 
   <!-- end construcao section -->
@@ -360,13 +339,44 @@ contato@jorengenharia.com.br              </span>
   
       <br><br>
           
-          
+      <a href="index.html" class="home-button" title="Voltar para Home">
+        <img src="images/botaohome.png" alt="Home">
+    </a>
+    
+    <style>
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #00113d; /* cor de fundo */
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            z-index: 9999; /* garante que o botão ficará acima de outros elementos */
+        }
+    
+        .home-button img {
+            width: 50px; /* ajuste o tamanho do ícone conforme necessário */
+            height: 50px;
+        }
+    
+        .home-button:hover {
+            background-color: #ff6807; /* cor ao passar o mouse */
+        }
+    </style>
+      
           
       
   <!-- end info_section -->
   
   
-  <!-- footer section -->
+  <!-- footer section
   <footer class="footer_section">
     <div class="container">
       <p>
@@ -374,7 +384,7 @@ contato@jorengenharia.com.br              </span>
         <a href="https://www.instagram.com/agencialimino/">Desenvolvido Por BrandCode Solutions</a>
       </p>
     </div>
-  </footer>
+  </footer> -->
   <!-- footer section -->
   
     <!-- jQery -->
@@ -395,7 +405,25 @@ contato@jorengenharia.com.br              </span>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
+    <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!" target="_blank" class="whatsapp-button">
+      <img src="images/whatsapp-icon.png" alt="WhatsApp">
+  </a>
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      right: 10px;  /* Distância do botão do lado direito da tela */
+      top: 85%;  /* Posiciona o botão na metade da tela */
+      transform: translateY(-50%);  /* Ajusta para garantir que o botão fique centralizado verticalmente */
+      z-index: 1000;  /* Garante que o botão fique acima de outros elementos */
+  }
   
+  .whatsapp-button img {
+      width: 70px;  /* Tamanho do ícone do WhatsApp */
+      height: auto;
+      cursor: pointer;
+  }
+  
+  </style>
   </body>
   
   </html>
