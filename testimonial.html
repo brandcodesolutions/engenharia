@@ -420,21 +420,54 @@
   <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!" target="_blank" class="whatsapp-button">
     <img src="images/whatsapp-icon.png" alt="WhatsApp">
 </a>
+
 <style>
   .whatsapp-button {
     position: fixed;
     right: 10px;  /* Distância do botão do lado direito da tela */
-    top: 85%;  /* Posiciona o botão na metade da tela */
+    top: 85%;  /* Posiciona o botão perto do centro verticalmente */
     transform: translateY(-50%);  /* Ajusta para garantir que o botão fique centralizado verticalmente */
     z-index: 1000;  /* Garante que o botão fique acima de outros elementos */
-}
-
-.whatsapp-button img {
+    pointer-events: auto; /* Certifica-se de que o botão não seja sobreposto por outros elementos */
+  }
+  
+  .whatsapp-button img {
     width: 70px;  /* Tamanho do ícone do WhatsApp */
     height: auto;
     cursor: pointer;
-}
+  }
+</style>
 
+<a href="index.html" class="home-button" title="Voltar para Home">
+  <img src="images/botaohome.png" alt="Home">
+</a>
+
+<style>
+  .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #00113d; /* cor de fundo */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      z-index: 9999; /* garante que o botão ficará acima de outros elementos */
+  }
+
+  .home-button img {
+      width: 50px; /* ajuste o tamanho do ícone conforme necessário */
+      height: 50px;
+  }
+
+  .home-button:hover {
+      background-color: #ff6807; /* cor ao passar o mouse */
+  }
 </style>
 </body>
 

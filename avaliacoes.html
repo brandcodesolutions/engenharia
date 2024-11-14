@@ -201,7 +201,7 @@
 
 
     <!-- end header section -->
-  </div>
+  </div><br><br><br><br><br><br><br>
 
   <!--ler mais avaliações e perícias-->
   
@@ -483,21 +483,22 @@
     <a href="https://wa.me/5511996169619?text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site!" target="_blank" class="whatsapp-button">
       <img src="images/whatsapp-icon.png" alt="WhatsApp">
   </a>
+  
   <style>
     .whatsapp-button {
       position: fixed;
       right: 10px;  /* Distância do botão do lado direito da tela */
-      top: 85%;  /* Posiciona o botão na metade da tela */
+      top: 85%;  /* Posiciona o botão perto do centro verticalmente */
       transform: translateY(-50%);  /* Ajusta para garantir que o botão fique centralizado verticalmente */
       z-index: 1000;  /* Garante que o botão fique acima de outros elementos */
-  }
-  
-  .whatsapp-button img {
+      pointer-events: auto; /* Certifica-se de que o botão não seja sobreposto por outros elementos */
+    }
+    
+    .whatsapp-button img {
       width: 70px;  /* Tamanho do ícone do WhatsApp */
       height: auto;
       cursor: pointer;
-  }
-  
+    }
   </style>
   </body>
   
